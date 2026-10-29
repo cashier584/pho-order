@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="brothGradDb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EAB308"/>
+      <stop offset="55%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </radialGradient>
+    <linearGradient id="bowlGradGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#FEF9C3"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="beefRareDb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="60%" stop-color="#BE123C"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+    <radialGradient id="meatball" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="70%" stop-color="#78350F"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="#FDFBF7"/>
+  <ellipse cx="200" cy="245" rx="150" ry="22" fill="#E2D9CC" opacity="0.6"/>
+
+  <!-- Golden trim Bowl -->
+  <ellipse cx="200" cy="180" rx="138" ry="72" fill="url(#bowlGradGold)" stroke="#CA8A04" stroke-width="2.5"/>
+  <path d="M 65 175 Q 73 242 200 244 Q 327 242 335 175 Z" fill="url(#bowlGradGold)" stroke="#CA8A04" stroke-width="2.5"/>
+  <path d="M 82 190 Q 200 230 318 190" fill="none" stroke="#B45309" stroke-width="2.5" stroke-dasharray="10,5" opacity="0.8"/>
+
+  <!-- Broth -->
+  <ellipse cx="200" cy="170" rx="126" ry="60" fill="url(#brothGradDb)"/>
+
+  <!-- Noodles -->
+  <g stroke="#FFFBEB" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.95">
+    <path d="M 110 165 Q 155 190 215 178 Q 260 162 290 180"/>
+    <path d="M 125 180 Q 170 200 230 188 Q 275 180 295 192"/>
+  </g>
+
+  <!-- Meatballs (Bò viên gân) -->
+  <circle cx="130" cy="165" r="14" fill="url(#meatball)"/>
+  <ellipse cx="127" cy="161" rx="4" ry="2" fill="#FDE68A" opacity="0.5"/>
+  <circle cx="152" cy="178" r="13" fill="url(#meatball)"/>
+  <ellipse cx="149" cy="174" rx="4" ry="2" fill="#FDE68A" opacity="0.5"/>
+
+  <!-- Rare Beef slice -->
+  <path d="M 160 148 C 170 135, 205 138, 212 152 C 218 165, 180 170, 160 148 Z" fill="url(#beefRareDb)"/>
+  <!-- Brisket slice -->
+  <rect x="205" y="145" width="50" height="24" rx="5" fill="#7C2D12" transform="rotate(12 230 157)"/>
+  <line x1="210" y1="152" x2="250" y2="160" stroke="#FDE68A" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Tendon / Gân bò trong veo -->
+  <path d="M 185 168 Q 205 160 220 172 Q 200 182 185 168 Z" fill="#FDE047" opacity="0.75" stroke="#CA8A04" stroke-width="1"/>
+
+  <!-- Fresh Herbs & Chili -->
+  <circle cx="215" cy="180" r="5.5" fill="#22C55E" stroke="#15803D" stroke-width="2"/>
+  <circle cx="240" cy="175" r="5" fill="#22C55E" stroke="#15803D" stroke-width="2"/>
+  <circle cx="178" cy="185" r="5" fill="#22C55E" stroke="#15803D" stroke-width="2"/>
+
+  <!-- Chili slices -->
+  <ellipse cx="255" cy="160" rx="8" ry="4" fill="#E11D48" transform="rotate(-15 255 160)"/>
+  <ellipse cx="255" cy="160" rx="4" ry="2" fill="#FEF08A" transform="rotate(-15 255 160)"/>
+  <ellipse cx="170" cy="162" rx="7" ry="3.5" fill="#E11D48" transform="rotate(30 170 162)"/>
+
+  <!-- Steaming Vapor -->
+  <g stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.5">
+    <path d="M 160 115 Q 145 80 165 55 Q 175 35 160 15"/>
+    <path d="M 200 110 Q 220 78 198 50 Q 188 32 205 12"/>
+    <path d="M 245 115 Q 260 80 240 52 Q 230 35 245 15"/>
+  </g>
+
+  <!-- Crown / Star badge icon on top right -->
+  <g transform="translate(325, 25)">
+    <circle cx="20" cy="20" r="18" fill="#DC2626"/>
+    <polygon points="20,8 24,16 32,17 26,23 28,31 20,27 12,31 14,23 8,17 16,16" fill="#FEF08A"/>
+  </g>
+</svg>

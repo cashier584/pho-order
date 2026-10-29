@@ -1,0 +1,229 @@
+.wrapper {
+    animation: fadeIn 0.25s ease-out;
+}
+
+.main {
+    padding: 24px 16px 128px;
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+.heroCard {
+    background: var(--card);
+    border: 1.5px solid var(--line);
+    border-radius: 24px;
+    padding: 28px 20px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 16px;
+}
+
+.illustrationWrap {
+    position: relative;
+    width: 160px;
+    height: 120px;
+    margin: 0 auto 12px;
+}
+
+.phoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.checkBadge {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--herb-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--card);
+    box-shadow: 0 4px 10px rgba(21, 128, 61, 0.35);
+}
+
+.title {
+    margin: 0 0 4px;
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.subtitle {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.orderTicket {
+    background: var(--card-subtle);
+    border: 1px dashed var(--line);
+    border-radius: 14px;
+    padding: 12px 14px;
+}
+
+.ticketRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ticketCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticketLabel {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.8px;
+    margin-bottom: 2px;
+}
+
+.ticketCode {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.01em;
+}
+
+.ticketVal {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.ticketDivider {
+    width: 1px;
+    height: 30px;
+    background: var(--line);
+}
+
+/* Tracking Card */
+.trackingCard {
+    background: var(--card);
+    border: 1.5px solid var(--line);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: var(--shadow-xs);
+    margin-bottom: 16px;
+}
+
+.trackingHeading {
+    margin: 0 0 16px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    bottom: 20px;
+    left: 14px;
+    width: 2px;
+    background: var(--line);
+    z-index: 1;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.stepCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 2px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--muted);
+    flex-shrink: 0;
+}
+
+.stepDone .stepCircle {
+    background: var(--herb-green);
+    border-color: var(--herb-green);
+    color: #ffffff;
+}
+
+.stepActive .stepCircle {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.pulsingDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+    animation: pulseSubtle 1.4s infinite ease-in-out;
+}
+
+.stepInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2px;
+}
+
+.stepName {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.stepSub {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 2px;
+}
+
+.stepActive .stepName {
+    color: var(--primary);
+}
+
+/* Tip Box */
+.tipBox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    background: var(--accent-gold-light);
+    border-radius: 14px;
+    border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+.tipIcon {
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.tipText {
+    margin: 0;
+    font-size: 0.82rem;
+    color: #92400E;
+    line-height: 1.45;
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bowlBanh" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="#FDFBF7"/>
+  <ellipse cx="200" cy="245" rx="140" ry="22" fill="#E2D9CC" opacity="0.6"/>
+
+  <!-- Bowl -->
+  <ellipse cx="200" cy="180" rx="125" ry="65" fill="url(#bowlBanh)" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M 78 175 Q 85 238 200 240 Q 315 238 322 175 Z" fill="url(#bowlBanh)" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M 95 190 Q 200 228 305 190" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Steamed Fresh Noodles (Bánh phở tráng trắng ngần mướt mát) -->
+  <ellipse cx="200" cy="170" rx="112" ry="52" fill="#FEFCE8"/>
+  <g stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" fill="none">
+    <path d="M 115 160 Q 155 185 205 170 Q 255 155 285 175"/>
+    <path d="M 105 175 Q 150 198 215 182 Q 260 172 290 188"/>
+    <path d="M 125 150 Q 170 170 230 162 Q 270 160 280 170"/>
+    <path d="M 135 185 Q 180 205 240 192 Q 275 185 292 180"/>
+  </g>
+  <g stroke="#FDE68A" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6">
+    <path d="M 120 164 Q 160 188 208 174"/>
+    <path d="M 110 178 Q 155 200 220 185"/>
+  </g>
+
+  <!-- Spring onion garnish -->
+  <circle cx="195" cy="168" r="5" fill="#22C55E" stroke="#15803D" stroke-width="1.8"/>
+  <circle cx="210" cy="175" r="4.5" fill="#22C55E" stroke="#15803D" stroke-width="1.8"/>
+
+  <!-- Steam -->
+  <g stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5">
+    <path d="M 180 120 Q 168 95 185 70"/>
+    <path d="M 220 115 Q 235 88 218 68"/>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="teaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.7)"/>
+      <stop offset="20%" stop-color="rgba(255,255,255,0.2)"/>
+      <stop offset="80%" stop-color="rgba(255,255,255,0.1)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.6)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="#FDFBF7"/>
+  <ellipse cx="200" cy="255" rx="80" ry="16" fill="#E2D9CC" opacity="0.6"/>
+
+  <!-- Glass Shadow -->
+  <ellipse cx="200" cy="245" rx="55" ry="12" fill="#CBD5E1" opacity="0.5"/>
+
+  <!-- Tea Liquid -->
+  <path d="M 152 110 L 160 235 Q 200 245 240 235 L 248 110 Q 200 120 152 110 Z" fill="url(#teaGrad)"/>
+
+  <!-- Ice Cubes inside Glass -->
+  <rect x="165" y="125" width="32" height="32" rx="6" fill="#FFFFFF" opacity="0.6" stroke="#FEF3C7" stroke-width="1.5" transform="rotate(12 181 141)"/>
+  <rect x="195" y="145" width="34" height="34" rx="6" fill="#FFFFFF" opacity="0.65" stroke="#FEF3C7" stroke-width="1.5" transform="rotate(-18 212 162)"/>
+  <rect x="175" y="180" width="30" height="30" rx="5" fill="#FFFFFF" opacity="0.55" stroke="#FEF3C7" stroke-width="1.5" transform="rotate(8 190 195)"/>
+
+  <!-- Glass Outer Body -->
+  <path d="M 148 70 L 158 240 Q 200 252 242 240 L 252 70 Q 200 80 148 70 Z" fill="url(#glassGrad)" stroke="#94A3B8" stroke-width="1.8"/>
+  <ellipse cx="200" cy="70" rx="52" ry="10" fill="none" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Glass Highlight Reflections -->
+  <path d="M 154 85 L 162 230" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+  <path d="M 162 90 L 167 220" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Straw (Ống hút xanh) -->
+  <line x1="215" y1="40" x2="185" y2="230" stroke="#10B981" stroke-width="7" stroke-linecap="round"/>
+  <line x1="216" y1="40" x2="186" y2="230" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+
+  <!-- Jasmine / Mint leaf garnish on rim -->
+  <path d="M 150 70 Q 130 50 145 35 Q 165 45 150 70 Z" fill="#22C55E" stroke="#15803D" stroke-width="1.5"/>
+  <path d="M 140 48 Q 155 42 165 52" stroke="#15803D" stroke-width="1.2" fill="none"/>
+
+  <!-- Condensation droplets (Giọt nước mát lạnh trên thành cốc) -->
+  <circle cx="166" cy="140" r="2.5" fill="#FFFFFF" opacity="0.75"/>
+  <circle cx="164" cy="170" r="2" fill="#FFFFFF" opacity="0.75"/>
+  <circle cx="236" cy="135" r="2" fill="#FFFFFF" opacity="0.75"/>
+  <circle cx="232" cy="165" r="2.5" fill="#FFFFFF" opacity="0.75"/>
+  <circle cx="190" cy="225" r="2" fill="#FFFFFF" opacity="0.75"/>
+</svg>

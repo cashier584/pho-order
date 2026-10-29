@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="plateBeef" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="80%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="beefSlices" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="50%" stop-color="#BE123C"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="#FDFBF7"/>
+  <ellipse cx="200" cy="245" rx="140" ry="22" fill="#E2D9CC" opacity="0.6"/>
+
+  <!-- Plate -->
+  <ellipse cx="200" cy="190" rx="135" ry="52" fill="url(#plateBeef)" stroke="#CBD5E1" stroke-width="2"/>
+  <ellipse cx="200" cy="187" rx="118" ry="42" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Shaved fresh beef slices folded artfully on plate -->
+  <path d="M 120 175 C 130 155, 170 158, 185 178 C 170 195, 130 195, 120 175 Z" fill="url(#beefSlices)"/>
+  <path d="M 130 170 Q 155 175 175 172" stroke="#FECDD3" stroke-width="1.8" fill="none" opacity="0.8"/>
+
+  <path d="M 160 160 C 175 140, 215 142, 228 165 C 215 185, 175 182, 160 160 Z" fill="url(#beefSlices)"/>
+  <path d="M 172 155 Q 198 160 218 158" stroke="#FECDD3" stroke-width="1.8" fill="none" opacity="0.8"/>
+
+  <path d="M 195 170 C 210 150, 255 155, 268 178 C 250 198, 205 195, 195 170 Z" fill="url(#beefSlices)"/>
+  <path d="M 210 165 Q 235 172 258 170" stroke="#FECDD3" stroke-width="1.8" fill="none" opacity="0.8"/>
+
+  <path d="M 150 180 C 165 168, 205 170, 215 188 C 200 202, 160 200, 150 180 Z" fill="url(#beefSlices)"/>
+  <path d="M 162 178 Q 185 185 205 182" stroke="#FECDD3" stroke-width="1.5" fill="none" opacity="0.8"/>
+
+  <!-- Scallions & Ginger garnish (Hành gừng thái chỉ) -->
+  <g stroke="#15803D" stroke-width="2" stroke-linecap="round">
+    <line x1="165" y1="168" x2="190" y2="162"/>
+    <line x1="180" y1="155" x2="202" y2="170"/>
+    <line x1="195" y1="172" x2="220" y2="165"/>
+  </g>
+  <g stroke="#FBBF24" stroke-width="1.8" stroke-linecap="round">
+    <line x1="172" y1="162" x2="195" y2="168"/>
+    <line x1="188" y1="175" x2="208" y2="160"/>
+  </g>
+</svg>

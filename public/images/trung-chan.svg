@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="yolkGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="45%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </radialGradient>
+    <radialGradient id="eggWhiteGrad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="80%" stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </radialGradient>
+    <radialGradient id="soupGradSmall" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#CA8A04"/>
+      <stop offset="70%" stop-color="#9A3412"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </radialGradient>
+    <linearGradient id="smallBowlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="#FDFBF7"/>
+  <ellipse cx="200" cy="245" rx="130" ry="20" fill="#E2D9CC" opacity="0.6"/>
+
+  <!-- Small Ceramic Bowl (Bát chén con) -->
+  <ellipse cx="200" cy="180" rx="110" ry="58" fill="url(#smallBowlGrad)" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M 94 175 Q 100 236 200 238 Q 300 236 306 175 Z" fill="url(#smallBowlGrad)" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M 110 190 Q 200 225 290 190" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="6,3" opacity="0.7"/>
+
+  <!-- Broth inside bowl -->
+  <ellipse cx="200" cy="172" rx="100" ry="48" fill="url(#soupGradSmall)"/>
+
+  <!-- Egg White (Lòng trắng chần mềm mướt bao quanh) -->
+  <path d="M 140 170 C 130 155, 175 145, 205 148 C 240 152, 265 165, 255 180 C 245 195, 195 200, 160 192 C 140 188, 145 178, 140 170 Z" fill="url(#eggWhiteGrad)" opacity="0.95"/>
+
+  <!-- Golden Egg Yolk (Lòng đỏ trứng gà ta lòng đào căng mọng) -->
+  <ellipse cx="195" cy="172" rx="34" ry="26" fill="url(#yolkGrad)"/>
+  <!-- Shiny reflection on yolk -->
+  <ellipse cx="185" cy="164" rx="10" ry="6" fill="#FFFFFF" opacity="0.65" transform="rotate(-15 185 164)"/>
+
+  <!-- Black Pepper & Scallion rings on top (Rắc tiêu đen & hành lá thơm nức) -->
+  <circle cx="165" cy="168" r="4.5" fill="#22C55E" stroke="#15803D" stroke-width="1.8"/>
+  <circle cx="230" cy="168" r="4.5" fill="#22C55E" stroke="#15803D" stroke-width="1.8"/>
+  <circle cx="218" cy="185" r="4" fill="#22C55E" stroke="#15803D" stroke-width="1.5"/>
+
+  <!-- Pepper specks -->
+  <circle cx="188" cy="176" r="1.5" fill="#1E293B"/>
+  <circle cx="194" cy="180" r="1.8" fill="#1E293B"/>
+  <circle cx="204" cy="172" r="1.5" fill="#1E293B"/>
+  <circle cx="182" cy="170" r="1.3" fill="#1E293B"/>
+
+  <!-- Steaming Vapor -->
+  <g stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.45">
+    <path d="M 180 125 Q 170 100 185 80"/>
+    <path d="M 215 120 Q 228 95 215 75"/>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7F1D1D"/>
+      <stop offset="50%" stop-color="#991B1B"/>
+      <stop offset="100%" stop-color="#450A0A"/>
+    </linearGradient>
+    <radialGradient id="glowWarm" cx="70%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#991B1B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hanoiTile" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 L 40 20 L 20 40 Z" fill="none" stroke="#B91C1C" stroke-width="1" opacity="0.35"/>
+      <circle cx="20" cy="20" r="3" fill="#D97706" opacity="0.25"/>
+    </pattern>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="320" fill="url(#heroBg)"/>
+  <!-- Decorative Traditional Hanoi Pattern Overlay -->
+  <rect width="800" height="320" fill="url(#hanoiTile)"/>
+  <rect width="800" height="320" fill="url(#glowWarm)"/>
+
+  <!-- Left Side: Typography & Heritage Brand Info -->
+  <g transform="translate(48, 45)">
+    <!-- Heritage Badge -->
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#B91C1C" stroke="#FBBF24" stroke-width="1.2"/>
+    <circle cx="14" cy="14" r="5" fill="#22C55E"/>
+    <text x="28" y="19" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12" font-weight="700" fill="#FEF3C7" letter-spacing="1">ĐANG MỞ CỬA • TỰ PHỤC VỤ</text>
+
+    <!-- Main Title -->
+    <text x="0" y="80" font-family="'Be Vietnam Pro', Georgia, serif" font-size="38" font-weight="800" fill="url(#goldText)" letter-spacing="0.5">PHỞ BÁT SỨ</text>
+    <text x="0" y="112" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="16" font-weight="500" fill="#FECDD3" opacity="0.95">Hương Vị Gia Truyền Phố Cổ Hà Nội</text>
+
+    <!-- Value Props Badges -->
+    <g transform="translate(0, 142)">
+      <rect x="0" y="0" width="125" height="32" rx="8" fill="rgba(0,0,0,0.25)" stroke="rgba(254,205,211,0.3)" stroke-width="1"/>
+      <text x="12" y="21" font-family="system-ui" font-size="13" font-weight="600" fill="#FFFFFF">🥩 Bò Tươi Sớm</text>
+
+      <rect x="135" y="0" width="138" height="32" rx="8" fill="rgba(0,0,0,0.25)" stroke="rgba(254,205,211,0.3)" stroke-width="1"/>
+      <text x="147" y="21" font-family="system-ui" font-size="13" font-weight="600" fill="#FFFFFF">🥣 Nước Dùng 18h</text>
+
+      <rect x="283" y="0" width="135" height="32" rx="8" fill="rgba(0,0,0,0.25)" stroke="rgba(254,205,211,0.3)" stroke-width="1"/>
+      <text x="295" y="21" font-family="system-ui" font-size="13" font-weight="600" fill="#FFFFFF">⚡ Nóng Hổi Ngay</text>
+    </g>
+
+    <text x="0" y="215" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" fill="#FDE047" opacity="0.9">💡 Chọn món bên dưới &amp; bấm Gọi món – Quán sẽ chuẩn bị ngay tới bàn!</text>
+  </g>
+
+  <!-- Right Side: Graphic Steaming Pho Bowl Artwork -->
+  <g transform="translate(520, 25)">
+    <!-- Ambient Bowl Backlight -->
+    <circle cx="120" cy="150" r="110" fill="#F59E0B" opacity="0.25" filter="blur(20px)"/>
+
+    <!-- Ceramic Bowl -->
+    <ellipse cx="120" cy="180" rx="100" ry="46" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+    <path d="M 22 178 Q 28 232 120 234 Q 212 232 218 178 Z" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+    <!-- Traditional Blue wave rim -->
+    <path d="M 36 188 Q 120 220 204 188" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.8"/>
+
+    <!-- Golden Broth -->
+    <ellipse cx="120" cy="172" rx="92" ry="38" fill="#B45309"/>
+    <ellipse cx="120" cy="170" rx="86" ry="34" fill="#D97706"/>
+
+    <!-- Noodles -->
+    <g stroke="#FFFBEB" stroke-width="3.8" stroke-linecap="round" fill="none">
+      <path d="M 50 168 Q 85 185 130 174 Q 170 165 190 175"/>
+      <path d="M 60 178 Q 95 192 145 182 Q 180 176 195 185"/>
+    </g>
+
+    <!-- Beef Ribbons -->
+    <path d="M 75 162 C 85 150, 115 152, 122 165 C 115 178, 85 175, 75 162 Z" fill="#E11D48"/>
+    <path d="M 110 156 C 120 144, 150 148, 156 162 C 148 174, 120 172, 110 156 Z" fill="#BE123C"/>
+
+    <!-- Fresh herbs & Chili -->
+    <circle cx="85" cy="174" r="4.5" fill="#22C55E"/>
+    <circle cx="150" cy="170" r="4.5" fill="#22C55E"/>
+    <ellipse cx="168" cy="164" rx="6" ry="3" fill="#EF4444" transform="rotate(-15 168 164)"/>
+
+    <!-- Steaming Vapor rising up -->
+    <g stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6">
+      <path d="M 90 130 Q 75 95 95 65 Q 105 45 90 20"/>
+      <path d="M 125 125 Q 145 90 120 60 Q 110 40 125 15"/>
+      <path d="M 160 130 Q 175 95 155 68 Q 145 45 160 20"/>
+    </g>
+
+    <!-- Chopsticks -->
+    <line x1="175" y1="125" x2="235" y2="85" stroke="#78350F" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="180" y1="130" x2="240" y2="90" stroke="#92400E" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

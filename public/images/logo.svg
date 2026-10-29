@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <circle cx="50" cy="50" r="48" fill="#991B1B" stroke="#FBBF24" stroke-width="2.5"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#FDE68A" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
+  <!-- Bowl -->
+  <ellipse cx="50" cy="58" rx="28" ry="12" fill="#FFFFFF"/>
+  <path d="M 22 58 Q 25 76 50 78 Q 75 76 78 58 Z" fill="#FFFFFF"/>
+  <path d="M 28 62 Q 50 72 72 62" fill="none" stroke="#2563EB" stroke-width="1.2" stroke-dasharray="2,2"/>
+  <!-- Soup -->
+  <ellipse cx="50" cy="56" rx="25" ry="9" fill="#D97706"/>
+  <!-- Meat & Herbs -->
+  <circle cx="45" cy="56" r="4" fill="#E11D48"/>
+  <circle cx="55" cy="55" r="3" fill="#22C55E"/>
+  <circle cx="50" cy="58" r="2.5" fill="#4ADE80"/>
+  <!-- Steam -->
+  <path d="M 42 45 Q 38 35 44 26" stroke="#FEF3C7" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 50 43 Q 54 33 48 24" stroke="#FEF3C7" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 58 45 Q 62 35 56 26" stroke="#FEF3C7" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <!-- Chopsticks -->
+  <line x1="60" y1="46" x2="78" y2="30" stroke="#FDE68A" stroke-width="2" stroke-linecap="round"/>
+</svg>

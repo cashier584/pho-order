@@ -1,0 +1,45 @@
+.section {
+    margin-top: 24px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0 4px;
+}
+
+.titleWrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.title {
+    margin: 0;
+    color: var(--ink);
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.countBadge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--card-subtle);
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--line-subtle);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
