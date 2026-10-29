@@ -10,7 +10,6 @@ type Props = {
     cart: Record<number, number>;
     note: string;
     total: number;
-    tableNo?: number;
     onNoteChange: (v: string) => void;
     onAdd: (id: number) => void;
     onRemove: (id: number) => void;
@@ -35,7 +34,7 @@ export default function CartSheet(p: Props) {
 
                     <div className={styles.tableBadge}>
                         <span className={styles.tableDot}></span>
-                        <span>Bàn {p.tableNo ?? 4}</span>
+                        <span>Bàn 4</span>
                     </div>
                 </div>
 

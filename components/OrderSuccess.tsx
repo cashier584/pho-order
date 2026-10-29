@@ -4,11 +4,10 @@ import styles from "./OrderSuccess.module.css";
 
 type Props = {
     orderNo: number;
-    tableNo?: number;
     onNewOrder: () => void;
 };
 
-export default function OrderSuccess({ orderNo, tableNo = 4, onNewOrder }: Props) {
+export default function OrderSuccess({ orderNo, onNewOrder }: Props) {
     const orderTime = new Date().toLocaleTimeString("vi-VN", {
         hour: "2-digit",
         minute: "2-digit",
@@ -46,7 +45,7 @@ export default function OrderSuccess({ orderNo, tableNo = 4, onNewOrder }: Props
                             <div className={styles.ticketDivider}></div>
                             <div className={styles.ticketCol}>
                                 <span className={styles.ticketLabel}>VỊ TRÍ</span>
-                                <span className={styles.ticketVal}>Bàn {tableNo}</span>
+                                <span className={styles.ticketVal}>Bàn 4</span>
                             </div>
                             <div className={styles.ticketDivider}></div>
                             <div className={styles.ticketCol}>
@@ -82,7 +81,7 @@ export default function OrderSuccess({ orderNo, tableNo = 4, onNewOrder }: Props
                         <div className={styles.step}>
                             <div className={styles.stepCircle}>3</div>
                             <div className={styles.stepInfo}>
-                                <span className={styles.stepName}>Phục vụ nóng hổi tại Bàn {tableNo}</span>
+                                <span className={styles.stepName}>Phục vụ nóng hổi tại Bàn 4</span>
                                 <span className={styles.stepSub}>Kèm quẩy giòn &amp; chanh ớt</span>
                             </div>
                         </div>

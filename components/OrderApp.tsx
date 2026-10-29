@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Image from "next/image";
-import { CATEGORIES, MENU, Category } from "@/lib/menu";
+import { CATEGORIES, MENU } from "@/lib/menu";
 import Header from "./Header";
 import MenuSection from "./MenuSection";
 import CartBar from "./CartBar";
@@ -17,7 +17,6 @@ export default function OrderApp() {
     const [cart, setCart] = useState<Record<number, number>>({});
     const [note, setNote] = useState("");
     const [orderNo, setOrderNo] = useState(0);
-    const [tableNo, setTableNo] = useState(4);
     const [activeCategory, setActiveCategory] = useState<string>("all");
     const [searchQuery, setSearchQuery] = useState("");
 
@@ -46,7 +45,7 @@ export default function OrderApp() {
     const filteredCategories = useMemo(() => {
         const query = searchQuery.trim().toLowerCase();
         
-        let cats = activeCategory === "all" ? CATEGORIES : CATEGORIES.filter(c => c === activeCategory);
+        const cats = activeCategory === "all" ? CATEGORIES : CATEGORIES.filter(c => c === activeCategory);
 
         return cats.map(cat => {
             const items = MENU.filter(m => {
@@ -70,13 +69,7 @@ export default function OrderApp() {
 
     return (
         <div className={styles.app}>
-            <Header
-                subtitle={subtitle}
-                tableNo={tableNo}
-                onTableChange={setTableNo}
-                showBack={view === "cart"}
-                onBack={() => setView("menu")}
-            />
+            <Header subtitle={subtitle} />
 
             {view === "menu" && (
                 <>
@@ -179,8 +172,7 @@ export default function OrderApp() {
                     cart={cart}
                     note={note}
                     total={total}
-                    tableNo={tableNo}
-                    onNoteChange={setNote}
+                    onNoteChange={(v) => setNote(v)}
                     onAdd={add}
                     onRemove={remove}
                     onBack={() => {
@@ -194,7 +186,6 @@ export default function OrderApp() {
             {view === "done" && (
                 <OrderSuccess
                     orderNo={orderNo}
-                    tableNo={tableNo}
                     onNewOrder={() => {
                         setView("menu");
                         window.scrollTo({ top: 0, behavior: "smooth" });
